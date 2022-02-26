@@ -1,2 +1,2 @@
-# C-Sharp
+# C#
 Learning OOP
