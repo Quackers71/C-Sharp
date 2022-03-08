@@ -2,6 +2,6 @@
 
 - Paperback - 3rd Edition
 - https://github.com/head-first-csharp/third-edition
-- Started reading on TBC
+- Started reading on 07/03/2022 - Pg.1 ~ 45/948
 
 ## Notes throughout the book / Course
