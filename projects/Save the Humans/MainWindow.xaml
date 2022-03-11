@@ -5,8 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Save_the_Humans"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="350" Width="525">
     <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="19*"/>
+            <ColumnDefinition Width="64*"/>
+            <ColumnDefinition Width="21*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="120*"/>
+            <RowDefinition Height="41*"/>
+        </Grid.RowDefinitions>
 
     </Grid>
 </Window>
