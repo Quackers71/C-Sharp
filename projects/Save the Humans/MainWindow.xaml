@@ -8,14 +8,13 @@
         Title="MainWindow" Height="350" Width="525">
     <Grid>
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="19*"/>
-            <ColumnDefinition Width="64*"/>
-            <ColumnDefinition Width="21*"/>
+            <ColumnDefinition Width="140"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="160"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="120*"/>
-            <RowDefinition Height="41*"/>
+            <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
-
+        <Button Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="40,52,0,0" Width="75"/>
     </Grid>
 </Window>
