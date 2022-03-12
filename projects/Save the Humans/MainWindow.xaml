@@ -13,8 +13,8 @@
             <ColumnDefinition Width="160"/>
         </Grid.ColumnDefinitions>
         <Grid.RowDefinitions>
-            <RowDefinition Height="150*"/>
-            <RowDefinition Height="150*"/>
+            <RowDefinition/>
+            <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
         <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center" Width="76" Grid.Row="1"/>
         <ProgressBar Grid.Column="1" HorizontalAlignment="Center" Height="10" Grid.Row="1" VerticalAlignment="Center" Width="100"/>
