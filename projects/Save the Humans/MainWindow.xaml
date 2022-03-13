@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Save_the_Humans"
         mc:Ignorable="d"
-        Title="MainWindow" Height="350" Width="525">
+        Title="Save the Humans" Height="700" Width="1000" FontSize="18">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="140"/>
@@ -16,9 +16,12 @@
             <RowDefinition/>
             <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
-        <Button Content="Button" HorizontalAlignment="Center" VerticalAlignment="Center" Width="76" Grid.Row="1"/>
-        <ProgressBar Grid.Column="1" HorizontalAlignment="Center" Height="10" Grid.Row="1" VerticalAlignment="Center" Width="100"/>
-        <ContentControl Grid.Column="2" Content="ContentControl" HorizontalAlignment="Center" Grid.Row="1" VerticalAlignment="Center"/>
+        <Button x:Name="startButton" Content="Start!" HorizontalAlignment="Center" VerticalAlignment="Center" Width="76" Grid.Row="1"/>
+        <ProgressBar Grid.Column="1" Grid.Row="2" Height="20"/>
         <Canvas Grid.Column="1" Width="100" Height="100"/>
+        <StackPanel Grid.Column="2" Margin="18,19,18,26" Orientation="Vertical" Grid.Row="1">
+            <TextBox TextWrapping="Wrap" Text="Avoid These" FontSize="18"/>
+            <ContentControl Content="ContentControl" FontSize="10"/>
+        </StackPanel>
     </Grid>
 </Window>
