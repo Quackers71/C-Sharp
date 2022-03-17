@@ -23,17 +23,18 @@
         </Grid.RowDefinitions>
         <Button x:Name="startButton" Content="Start!" HorizontalAlignment="Center" VerticalAlignment="Center" Width="76" Grid.Row="1"/>
         <ProgressBar Grid.Column="1" Grid.Row="2" Height="20"/>
-        <Canvas x:Name="playArea" Grid.Column="1" Width="100" Height="100">
+        <Canvas x:Name="playArea" Grid.ColumnSpan="3">
             <Canvas.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFA640EE"/>
                     <GradientStop Color="#FF8BDE00" Offset="1"/>
                 </LinearGradientBrush>
             </Canvas.Background>
-            <StackPanel x:Name="human" Orientation="Vertical" Canvas.Left="158" Canvas.Top="200">
+            <StackPanel x:Name="human" Orientation="Vertical" Canvas.Left="34" Canvas.Top="45">
                 <Ellipse Fill="White" Height="10" Width="10"/>
                 <Rectangle Fill="White" Height="25" Width="10"/>
             </StackPanel>
+            <TextBlock x:Name="gameOverText" Canvas.Left="233" TextWrapping="Wrap" Canvas.Top="210" FontFamily="Arial" FontSize="100" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Top"><Run Language="en-gb" Text="Game Over"/></TextBlock>
         </Canvas>
         <StackPanel Grid.Column="2" Margin="18,534,18,20" Orientation="Vertical" Grid.RowSpan="2">
             <TextBox TextWrapping="Wrap" Text="Avoid These" FontSize="18" Foreground="White" Background="Black"/>
