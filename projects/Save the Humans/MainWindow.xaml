@@ -35,6 +35,22 @@
                 <Rectangle Fill="White" Height="25" Width="10"/>
             </StackPanel>
             <TextBlock x:Name="gameOverText" Canvas.Left="233" TextWrapping="Wrap" Canvas.Top="210" FontFamily="Arial" FontSize="100" FontWeight="Bold" FontStyle="Italic" HorizontalAlignment="Center" VerticalAlignment="Top"><Run Language="en-gb" Text="Game Over"/></TextBlock>
+            <Rectangle x:Name="target" Height="50" Canvas.Left="690" Stroke="Black" Canvas.Top="344" Width="50" RenderTransformOrigin="0.5,0.5">
+                <Rectangle.RenderTransform>
+                    <TransformGroup>
+                        <ScaleTransform/>
+                        <SkewTransform/>
+                        <RotateTransform Angle="45"/>
+                        <TranslateTransform/>
+                    </TransformGroup>
+                </Rectangle.RenderTransform>
+                <Rectangle.Fill>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="White" Offset="1"/>
+                    </LinearGradientBrush>
+                </Rectangle.Fill>
+            </Rectangle>
         </Canvas>
         <StackPanel Grid.Column="2" Margin="18,534,18,20" Orientation="Vertical" Grid.RowSpan="2">
             <TextBox TextWrapping="Wrap" Text="Avoid These" FontSize="18" Foreground="White" Background="Black"/>
