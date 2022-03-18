@@ -21,7 +21,7 @@
             <RowDefinition/>
             <RowDefinition Height="150"/>
         </Grid.RowDefinitions>
-        <Button x:Name="startButton" Content="Start!" HorizontalAlignment="Center" VerticalAlignment="Center" Width="76" Grid.Row="1"/>
+        <Button x:Name="startButton" Content="Start!" HorizontalAlignment="Center" VerticalAlignment="Center" Width="76" Grid.Row="1" Click="startButton_Click"/>
         <ProgressBar Grid.Column="1" Grid.Row="2" Height="20"/>
         <Canvas x:Name="playArea" Grid.ColumnSpan="3">
             <Canvas.Background>
