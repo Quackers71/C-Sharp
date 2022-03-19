@@ -52,19 +52,19 @@
                 VerticalAlignment="Center" Click="startButton_Click"/>
         <ProgressBar x:Name="progressBar" Grid.Column="1" Grid.Row="1" Height="20"/>
 
-        <Canvas x:Name="playArea" Grid.ColumnSpan="3" MouseMove="playArea_MouseMove" MouseLeave="playArea_MouseLeave">
+        <Canvas x:Name="playArea" Grid.ColumnSpan="3">
             <Canvas.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
                     <GradientStop Color="#FFA640EE" Offset="0"/>
                     <GradientStop Color="#FF87EE40" Offset="1"/>
                 </LinearGradientBrush>
             </Canvas.Background>
-            <StackPanel x:Name="human" Orientation="Vertical" MouseDown="human_MouseDown">
+            <StackPanel x:Name="human" Orientation="Vertical">
                 <Ellipse Fill="White" Height="10" Stroke="Black" Margin="0,0,0.021,0" Width="10"/>
                 <Rectangle Fill="White" Height="25" Stroke="Black" Margin="0,0,0.021,0" Width="10"/>
             </StackPanel>
             <TextBlock x:Name="gameOverText" Canvas.Left="71" TextWrapping="Wrap" Text="Game Over" Canvas.Top="80" FontFamily="Arial" FontSize="100" FontWeight="Bold" FontStyle="Italic"/>
-            <Rectangle x:Name="target" Height="50" Canvas.Left="725" Stroke="Black" Canvas.Top="255" Width="50" RenderTransformOrigin="0.5,0.5" MouseEnter="target_MouseEnter">
+            <Rectangle x:Name="target" Height="50" Canvas.Left="725" Stroke="Black" Canvas.Top="255" Width="50" RenderTransformOrigin="0.5,0.5">
                 <Rectangle.RenderTransform>
                     <TransformGroup>
                         <ScaleTransform/>
