@@ -89,6 +89,14 @@ namespace Save_the_Humans
             AnimateEnemy(enemy, random.Next((int)playArea.ActualHeight - 100), 
                 random.Next((int)playArea.ActualHeight - 100), "(Canvas.Top)");
             playArea.Children.Add(enemy);
+
+            enemy.MouseEnter += enemy_MouseEnter;
+        }
+
+        private void enemy_MouseEnter(object sender, MouseEventArgs e)
+        {
+            if (humanCaptured)
+                EndTheGame();
         }
 
         private void AnimateEnemy(ContentControl enemy, double from, double to, string propertyToAnimate)
