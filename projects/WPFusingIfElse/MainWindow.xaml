@@ -1,0 +1,21 @@
+﻿<Window x:Class="WPFusingIfElse.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPFusingIfElse"
+        mc:Ignorable="d"
+        Title="Fun with if/else statements" Height="150" Width="450">
+    <Grid x:Name="grid"  Background="Black">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <CheckBox x:Name="enableCheckbox" Content="Enable Label Changing" HorizontalAlignment="Left" Margin="269,30,0,0" VerticalAlignment="Top" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderBrush="#FFFFFEFE"/>
+        <Button x:Name="changeText" Content="Change the label is checked&#x9;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,27,0,0" Width="156"/>
+        <TextBlock x:Name="labelToChange" HorizontalAlignment="Left" Margin="145,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Press the Button to set my Text" VerticalAlignment="Center" Foreground="#FFFBFBFB"/>
+    </Grid>
+</Window>
