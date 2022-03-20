@@ -78,7 +78,18 @@ namespace WpfBuildAnApp
 
         private void button5_Click(object sender, RoutedEventArgs e)
         {
-            myLabel.Text = String.Empty;
+            int p = 2;
+            for (int q = 2; q < 32;
+             q = q * 2)
+            {
+                while (p < q)
+                {
+                    p = p * 2;
+                }
+                q = p - q;
+            }
+                myLabel.Text = "The count is " + p;
+            //myLabel.Text = String.Empty;
         }
     }
 }
