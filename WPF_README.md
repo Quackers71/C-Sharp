@@ -4,6 +4,7 @@
 - https://github.com/head-first-csharp/third-edition
 - Started reading on 07/03/2022
 - WPF Book - currently on Pg.46 ~ 40/165
+- WPF = Windows Presentation Foundation = Desktop App
 
 ## Notes throughout the book / Course from WPF version
 
