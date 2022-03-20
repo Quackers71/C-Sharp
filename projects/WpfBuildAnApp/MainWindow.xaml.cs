@@ -27,12 +27,26 @@ namespace WpfBuildAnApp
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            string name = "Tarquin";
+            int x = 3;
+            x = x * 17;
+            double d = Math.PI / 2;
+            myLabel.Text = "His name is " + name
+                + "\nx is " + x
+                + "\nd is " + d;
         }
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-
+            int x = 5;
+            if (x == 10)
+            {
+                myLabel.Text = "x must be 10";
+            }
+            else
+            {
+                myLabel.Text = "x isn't 10";
+            }
         }
 
         private void button3_Click(object sender, RoutedEventArgs e)
@@ -43,6 +57,11 @@ namespace WpfBuildAnApp
         private void button4_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void button5_Click(object sender, RoutedEventArgs e)
+        {
+            myLabel.Text = String.Empty;
         }
     }
 }

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfBuildAnApp"
         mc:Ignorable="d"
-        Title="WpfBuildAnApp" Height="350" Width="525">
+        Title="WpfBuildAnApp" Height="450" Width="750">
     <Grid x:Name="grid" Background="Black">
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -16,11 +16,11 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <Button x:Name="button1" FontFamily="Arial" FontWeight="Bold" Content="Show a message" HorizontalAlignment="Center" VerticalAlignment="Center" Click="button1_Click"/>
-        <Button x:Name="button2" FontFamily="Arial" FontWeight="Bold" Content="If / Else" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Click="button2_Click"/>
-        <Button x:Name="button3" FontFamily="Arial" FontWeight="Bold" Content="Another conditional test" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="1" Click="button3_Click"/>
-        <Button x:Name="button4" FontFamily="Arial" FontWeight="Bold" Content="A Loop" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" Click="button4_Click"/>
-        <TextBlock x:Name="myLabel" HorizontalAlignment="Center" TextWrapping="Wrap" 
-                   Text="TextBlock" VerticalAlignment="Center" Grid.ColumnSpan="2"  Grid.Row="2"/>
+        <Button x:Name="button1" FontWeight="Bold" Content="Show a message" Click="button1_Click" FontSize="24"/>
+        <Button x:Name="button2" FontWeight="Bold" Content="If/else" Grid.Column="1" Click="button2_Click" FontSize="24"/>
+        <Button x:Name="button3" FontWeight="Bold" Content="Another conditional test" Grid.Row="1" Click="button3_Click" FontSize="22"/>
+        <Button x:Name="button4" FontWeight="Bold" Content="A loop" Grid.Column="1" Grid.Row="1" Click="button4_Click" FontSize="24"/>
+        <Button x:Name="button5" FontWeight="Bold" Content="Clear the message" Click="button5_Click" FontSize="24" Grid.Column="0" Grid.Row="2"/>
+        <TextBlock x:Name="myLabel" HorizontalAlignment="Center" TextWrapping="Wrap" VerticalAlignment="Center" Grid.Column="1" Grid.Row="2" Foreground="White" FontSize="24"/>
     </Grid>
 </Window>
