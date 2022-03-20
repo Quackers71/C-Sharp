@@ -51,12 +51,29 @@ namespace WpfBuildAnApp
 
         private void button3_Click(object sender, RoutedEventArgs e)
         {
-
+            int someValue = 4;
+            string name = "Bobby Jr.";
+            if ((someValue == 3) && (name == "Joe"))
+            {
+                myLabel.Text = "x = 3 and his name is Joe";
+            }
+            myLabel.Text = "This line runs no matter what!";
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
         {
+            int count = 0;
 
+            while (count < 10)
+            {
+                count += 1;
+            }
+
+            for (int i = 0; i < 5; i++)
+            {
+                count -= 1;
+            }
+            myLabel.Text = "The answer is " + count;
         }
 
         private void button5_Click(object sender, RoutedEventArgs e)
