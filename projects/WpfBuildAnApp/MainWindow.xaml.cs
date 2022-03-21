@@ -27,7 +27,7 @@ namespace WpfBuildAnApp
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-            string name = "Tarquin";
+            string name = "WoJake";
             int x = 3;
             x = x * 17;
             double d = Math.PI / 2;
