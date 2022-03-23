@@ -78,31 +78,7 @@ namespace WpfBuildAnApp
 
         private void button5_Click(object sender, RoutedEventArgs e)
         {
-            string result = "";
-            int x = 3;
-            while (x > 0)
-            {
-                if (x > 2)
-                {
-                    result += "a";
-                }
-
-                x -= 1;
-                result += "-";
-
-                if (x == 2)
-                {
-                    result += "b c";
-                }
-                if (x == 1)
-                {
-                    result += "d";
-                    x -= 1;
-                }
-            }
-
-            myLabel.Text = result;
-            //myLabel.Text = String.Empty;
+            myLabel.Text = String.Empty;
         }
     }
 }
