@@ -24,5 +24,33 @@ namespace WPFusingIfElse
         {
             InitializeComponent();
         }
+
+        private void changeText_Click(object sender, RoutedEventArgs e)
+        {
+            if (enableCheckbox.IsChecked == true)
+            {
+                if (labelToChange.Text == "Right")
+                {
+                    labelToChange.Text = "Left";
+                    labelToChange.HorizontalAlignment = HorizontalAlignment.Left;
+                    Thickness margin = labelToChange.Margin;
+                    margin.Left = 50;
+                    labelToChange.Margin = margin;
+                }
+                else
+                {
+                    labelToChange.Text = "Right";
+                    labelToChange.HorizontalAlignment = HorizontalAlignment.Right;
+                    Thickness margin = labelToChange.Margin;
+                    margin.Right = 50;
+                    labelToChange.Margin = margin;
+                }
+            }
+            else
+            {
+                labelToChange.Text = "Text changing is disabled";
+                labelToChange.HorizontalAlignment = HorizontalAlignment.Center;
+            }
+        }
     }
 }

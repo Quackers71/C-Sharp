@@ -14,8 +14,15 @@
             <RowDefinition/>
             <RowDefinition/>
         </Grid.RowDefinitions>
-        <CheckBox x:Name="enableCheckbox" Content="Enable Label Changing" HorizontalAlignment="Left" Margin="269,30,0,0" VerticalAlignment="Top" Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" BorderBrush="#FFFFFEFE"/>
-        <Button x:Name="changeText" Content="Change the label is checked&#x9;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,27,0,0" Width="156"/>
-        <TextBlock x:Name="labelToChange" HorizontalAlignment="Left" Margin="145,0,0,0" Grid.Row="1" TextWrapping="Wrap" Text="Press the Button to set my Text" VerticalAlignment="Center" Foreground="#FFFBFBFB"/>
+        <Button x:Name="changeText" Content="Change the label is checked&#x9;"
+                HorizontalAlignment="Left" VerticalAlignment="Top" Margin="28,27,0,0"
+                Width="156" Click="changeText_Click"/>
+        <CheckBox x:Name="enableCheckbox" Content="Enable Label Changing"
+                  HorizontalAlignment="Left" Margin="269,30,0,0" VerticalAlignment="Top"
+                  Foreground="{DynamicResource {x:Static SystemColors.ControlBrushKey}}"
+                  BorderBrush="#FFFFFEFE"/>
+        <TextBlock x:Name="labelToChange" HorizontalAlignment="Center"
+                   Grid.Row="1" TextWrapping="Wrap" Text="Press the Button to set my Text"
+                   VerticalAlignment="Center" Foreground="#FFFBFBFB"/>
     </Grid>
 </Window>
