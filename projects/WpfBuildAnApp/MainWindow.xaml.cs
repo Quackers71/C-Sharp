@@ -78,37 +78,7 @@ namespace WpfBuildAnApp
 
         private void button5_Click(object sender, RoutedEventArgs e)
         {
-            int x = 0;
-            string poem = "";
-
-            while (x < 4)
-            {
-                poem += "a";
-                if (x < 1)
-                {
-                    poem += " ";
-                }
-                poem += "n";
-
-                if (x > 1)
-                {
-                    poem += " oyster";
-
-                    x += 2;
-                }
-                if (x == 1)
-                {
-                    poem += "noys ";
-                }
-                if (x < 1)
-                {
-                    poem += "oise ";
-                }
-                x += 1;
-            }
-            myLabel.Text = poem;
-
-            // myLabel.Text = String.Empty;
+            myLabel.Text = String.Empty;
         }
     }
 }
