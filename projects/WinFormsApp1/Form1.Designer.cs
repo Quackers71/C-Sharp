@@ -58,9 +58,9 @@
             // 
             // labelToChange
             // 
-            this.labelToChange.Location = new System.Drawing.Point(12, 57);
+            this.labelToChange.Location = new System.Drawing.Point(25, 57);
             this.labelToChange.Name = "labelToChange";
-            this.labelToChange.Size = new System.Drawing.Size(460, 23);
+            this.labelToChange.Size = new System.Drawing.Size(432, 23);
             this.labelToChange.TabIndex = 2;
             this.labelToChange.Text = "Press the button to change my text";
             this.labelToChange.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
