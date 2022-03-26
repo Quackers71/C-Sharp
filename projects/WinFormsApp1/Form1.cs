@@ -26,6 +26,7 @@ namespace WinFormsApp1
             {
                 labelToChange.Text = "Text changing is disabled";
                 labelToChange.TextAlign = ContentAlignment.MiddleCenter;
+                AnotherClass.Pow();
             }
         }
     }

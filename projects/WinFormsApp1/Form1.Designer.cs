@@ -49,7 +49,7 @@
             this.enableCheckbox.AutoSize = true;
             this.enableCheckbox.Checked = true;
             this.enableCheckbox.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.enableCheckbox.Location = new System.Drawing.Point(309, 9);
+            this.enableCheckbox.Location = new System.Drawing.Point(307, 13);
             this.enableCheckbox.Name = "enableCheckbox";
             this.enableCheckbox.Size = new System.Drawing.Size(135, 19);
             this.enableCheckbox.TabIndex = 1;
