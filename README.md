@@ -3,10 +3,10 @@
 - Paperback - 3rd Edition
 - https://github.com/head-first-csharp/third-edition
 - Started reading on 07/03/2022
-- Main Book - currently on Pg.97 ~ 141/948
+- Main Book - currently on Pg.101 ~ 145/948 - Chapter 3
 - WPF Book  - currently on Pg.85+ ~ 48/165
 
 ## Notes throughout the book / Course
 
  - Now using hfcsharp3e_WPF_download.pdf - WPF = Windows Presentation Foundation = Desktop App
- - Completed Save the Humans game via WPF version
+ - Back on the Main Book using Windows Forms Apps
