@@ -14,7 +14,7 @@ namespace WinFormsApp4
             string finalString = "";
             for (int count = 0; count < numberOfTimes; count++)
             {
-                finalString += thingToSay;
+                finalString += thingToSay + "\n";
             }
             MessageBox.Show(finalString);
             return finalString.Length;
