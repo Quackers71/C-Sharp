@@ -96,7 +96,6 @@
             this.label2.Size = new System.Drawing.Size(66, 15);
             this.label2.TabIndex = 4;
             this.label2.Text = "# of times :";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // Form1
             // 
