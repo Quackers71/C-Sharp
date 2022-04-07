@@ -3,7 +3,11 @@
 - Paperback - 3rd Edition
 - https://github.com/head-first-csharp/third-edition
 - Started reading on 07/03/2022
+<<<<<<< HEAD
 - Main Book - currently on Pg.141 ~ 185/948 - Chapter 4
+=======
+- Main Book - currently on Pg.119 ~ 164/948 - Chapter 3
+>>>>>>> e9cfc017915ddffa14ab6a75794a26c6335ba078
 - WPF Book  - currently on Pg.85+ ~ 48/165
 
 ## Notes throughout the book / Course
