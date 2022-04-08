@@ -49,7 +49,7 @@ namespace WinFormsApp5
 
         private void bobGivesToJoe_Click(object sender, EventArgs e)
         {
-            joe.ReceiveCash(bob.GiveCash(5));
+            joe.ReceiveCash(bob.GiveCash(10));
             UpdateForm();
         }
 
