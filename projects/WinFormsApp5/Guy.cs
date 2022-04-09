@@ -9,7 +9,7 @@ namespace WinFormsApp5
 {
     class Guy
     {
-        public string Name;
+        public string Name = "";
         public int Cash;
 
         public int GiveCash(int amount)

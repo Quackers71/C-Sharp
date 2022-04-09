@@ -10,4 +10,7 @@
 
  - Now using hfcsharp3e_WPF_download.pdf - WPF = Windows Presentation Foundation = Desktop App
  - Back on the Main Book using Windows Forms Apps
- - When you create a new object from a class, it’s called an instance of that class
+ - When you create a new object from a class, it’s called an instance of that class.
+ - Methods are what an object does. Fields are what the object knows.
+ - An object’s behavior is defined by its methods, and it uses fields to keep track of its state.
+ - When your program creates a new object, it gets added to the heap.
