@@ -133,7 +133,7 @@
             this.hyperInflation.Name = "hyperInflation";
             this.hyperInflation.Size = new System.Drawing.Size(222, 63);
             this.hyperInflation.TabIndex = 9;
-            this.hyperInflation.Text = "The CDC causes Hype-Inflation";
+            this.hyperInflation.Text = "The CDC causes Hyper Inflation";
             this.hyperInflation.UseVisualStyleBackColor = true;
             this.hyperInflation.Click += new System.EventHandler(this.hyperInflation_Click);
             // 
