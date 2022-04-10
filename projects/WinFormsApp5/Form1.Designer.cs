@@ -37,6 +37,7 @@
             this.bobGivesToJoe = new System.Windows.Forms.Button();
             this.joeGivesToBank = new System.Windows.Forms.Button();
             this.bobGivesToBank = new System.Windows.Forms.Button();
+            this.hyperInflation = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -126,11 +127,22 @@
             this.bobGivesToBank.UseVisualStyleBackColor = true;
             this.bobGivesToBank.Click += new System.EventHandler(this.bobGivesToBank_Click);
             // 
+            // hyperInflation
+            // 
+            this.hyperInflation.Location = new System.Drawing.Point(44, 329);
+            this.hyperInflation.Name = "hyperInflation";
+            this.hyperInflation.Size = new System.Drawing.Size(222, 63);
+            this.hyperInflation.TabIndex = 9;
+            this.hyperInflation.Text = "The CDC causes Hype-Inflation";
+            this.hyperInflation.UseVisualStyleBackColor = true;
+            this.hyperInflation.Click += new System.EventHandler(this.hyperInflation_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(315, 367);
+            this.ClientSize = new System.Drawing.Size(315, 425);
+            this.Controls.Add(this.hyperInflation);
             this.Controls.Add(this.bobGivesToBank);
             this.Controls.Add(this.joeGivesToBank);
             this.Controls.Add(this.bobGivesToJoe);
@@ -141,7 +153,7 @@
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "The Monetary System";
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -158,5 +170,6 @@
         private Button bobGivesToJoe;
         private Button joeGivesToBank;
         private Button bobGivesToBank;
+        private Button hyperInflation;
     }
 }

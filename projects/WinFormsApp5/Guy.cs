@@ -10,9 +10,9 @@ namespace WinFormsApp5
     class Guy
     {
         public string Name = "";
-        public int Cash;
+        public long Cash;
 
-        public int GiveCash(int amount)
+        public long GiveCash(long amount)
         {
             if (amount <= Cash && amount > 0)
             {
@@ -25,7 +25,7 @@ namespace WinFormsApp5
             }
         }
 
-        public int ReceiveCash(int amount)
+        public long ReceiveCash(long amount)
         {
             if (amount > 0)
             {

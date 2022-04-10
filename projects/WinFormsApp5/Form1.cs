@@ -4,8 +4,10 @@ namespace WinFormsApp5
     {
         Guy joe;
         Guy bob;
-        int bank = 100;
-        
+        long bank = 100;
+        long cdcFund = 100000000000;
+
+
         public Form1()
         {
             InitializeComponent();
@@ -62,6 +64,12 @@ namespace WinFormsApp5
         private void bobGivesToBank_Click(object sender, EventArgs e)
         {
             bank += bob.GiveCash(10);
+            UpdateForm();
+        }
+
+        private void hyperInflation_Click(object sender, EventArgs e)
+        {
+            bank += cdcFund;
             UpdateForm();
         }
     }
