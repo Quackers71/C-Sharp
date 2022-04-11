@@ -3,7 +3,7 @@
 - Paperback - 3rd Edition
 - https://github.com/head-first-csharp/third-edition
 - Started reading on 07/03/2022
-- Main Book - currently on Pg.147 ~ 191/948 - Chapter 4 Types and References
+- Main Book - currently on Pg.148 ~ 192/948 - Chapter 4 Types and References
 - WPF Book  - currently on Pg.85+ ~ 48/165
 
 ## Notes throughout the book / Course
