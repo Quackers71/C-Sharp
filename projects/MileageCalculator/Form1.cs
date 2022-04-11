@@ -19,23 +19,26 @@ namespace MileageCalculator
             endingMileage = (int)numericUpDown2.Value;
         }
 
+        public void resetLabels()
+        {
+            label4.Text = "$0";
+            label6.Text = "0";
+        }
+
         private void button1_Click(object sender, EventArgs e)
         {
             castUpDownValues();
 
-            if (startingMileage >= endingMileage)
+            if (startingMileage < endingMileage)
             {
-                string title = "Cannot Calculate Mileage";
-                MessageBox.Show("The starting mileage must be less than the ending mileage!", title);
-                label4.Text = "$0";
-                label6.Text = "0";
-            }
-            else
-            {
-
                 milesTraveled = endingMileage - startingMileage;
                 amountOwed = milesTraveled * reimburseRate;
                 label4.Text = String.Format("${0:N2}", amountOwed);
+            }
+            else
+            {
+                MessageBox.Show("The starting mileage must be less than the ending mileage!", "Cannot Calculate Mileage");
+                resetLabels();
             }
         }
 
@@ -43,15 +46,14 @@ namespace MileageCalculator
         {
             castUpDownValues();
 
-            if (startingMileage >= endingMileage)
-            {
-                label4.Text = "$0";
-                label6.Text = "0";
-            }
-            else
+            if (startingMileage < endingMileage)
             {
                 milesTraveled = endingMileage - startingMileage;
                 label6.Text = String.Format("{0:N2}", milesTraveled.ToString());
+            }
+            else
+            {
+                resetLabels();
             }
         }
     }
