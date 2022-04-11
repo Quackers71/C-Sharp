@@ -49,6 +49,16 @@ namespace WinFormsApp6
             myFloat = myInt + myFloat;
 
             MessageBox.Show("my Float added to my Int is " + myFloat);
+
+            long l = 139401930;
+            short s = 516;
+            double d = l - s;
+            d = d / 123.456;
+            MessageBox.Show("The answer to long/short/double is " + d);
+
+            long x = 139401930;
+            MessageBox.Show("x is " + x + "\n\n" + "The next output is x.ToString()");
+            MessageBox.Show(x.ToString());
         }
     }
 }
