@@ -9,6 +9,12 @@ namespace ElephantSwap
 {
     internal class Elephant
     {
+        public string Name = "";
+        public int EarSize;
 
+         public void WhoAmI()
+        {
+            MessageBox.Show("My Ears are " + EarSize + " inches tall", Name + " says...");
+        }
     }
 }
