@@ -14,7 +14,7 @@ namespace ElephantSwap
 
          public void WhoAmI()
         {
-            MessageBox.Show("My Ears are " + EarSize + " inches tall", Name + " says...");
+            MessageBox.Show("My Ears are " + EarSize + " inches tall.", Name + " says...");
         }
     }
 }
