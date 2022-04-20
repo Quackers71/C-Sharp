@@ -55,9 +55,9 @@
             this.label1.Location = new System.Drawing.Point(22, 70);
             this.label1.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(78, 32);
+            this.label1.Size = new System.Drawing.Size(128, 32);
             this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
+            this.label1.Text = "Sandwich1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label2
@@ -66,9 +66,9 @@
             this.label2.Location = new System.Drawing.Point(22, 102);
             this.label2.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 32);
+            this.label2.Size = new System.Drawing.Size(128, 32);
             this.label2.TabIndex = 3;
-            this.label2.Text = "label2";
+            this.label2.Text = "Sandwich2";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // label3
@@ -77,9 +77,9 @@
             this.label3.Location = new System.Drawing.Point(22, 134);
             this.label3.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(78, 32);
+            this.label3.Size = new System.Drawing.Size(128, 32);
             this.label3.TabIndex = 4;
-            this.label3.Text = "label3";
+            this.label3.Text = "Sandwich3";
             // 
             // label4
             // 
@@ -87,9 +87,9 @@
             this.label4.Location = new System.Drawing.Point(22, 166);
             this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(78, 32);
+            this.label4.Size = new System.Drawing.Size(128, 32);
             this.label4.TabIndex = 5;
-            this.label4.Text = "label4";
+            this.label4.Text = "Sandwich4";
             // 
             // label5
             // 
@@ -97,9 +97,9 @@
             this.label5.Location = new System.Drawing.Point(22, 198);
             this.label5.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(78, 32);
+            this.label5.Size = new System.Drawing.Size(128, 32);
             this.label5.TabIndex = 6;
-            this.label5.Text = "label5";
+            this.label5.Text = "Sandwich5";
             // 
             // label6
             // 
@@ -107,9 +107,9 @@
             this.label6.Location = new System.Drawing.Point(22, 230);
             this.label6.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(78, 32);
+            this.label6.Size = new System.Drawing.Size(128, 32);
             this.label6.TabIndex = 7;
-            this.label6.Text = "label6";
+            this.label6.Text = "Sandwich6";
             // 
             // button1
             // 
@@ -117,7 +117,7 @@
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(325, 46);
             this.button1.TabIndex = 8;
-            this.button1.Text = "Show me some fresh stuff!";
+            this.button1.Text = "Show me some fresh stuff";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -134,7 +134,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.WelcomeLabel);
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
