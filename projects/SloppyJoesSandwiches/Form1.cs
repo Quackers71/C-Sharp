@@ -6,6 +6,11 @@ namespace SloppyJoesSandwiches
         {
             InitializeComponent();
 
+            refreshMenu();
+        }
+
+        public void refreshMenu()
+        {
             MenuMaker menu = new MenuMaker() { Randomizer = new Random() };
 
             label1.Text = menu.GetMenuItem();
@@ -14,6 +19,11 @@ namespace SloppyJoesSandwiches
             label4.Text = menu.GetMenuItem();
             label5.Text = menu.GetMenuItem();
             label6.Text = menu.GetMenuItem();
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            refreshMenu();
         }
     }
 }
