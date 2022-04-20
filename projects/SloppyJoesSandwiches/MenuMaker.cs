@@ -18,8 +18,10 @@ namespace SloppyJoesSandwiches
         {
 #pragma warning disable CS8602 // Dereference of a possibly null reference.
             string randomMeat = Meats[Randomizer.Next(Meats.Length)];
+
 #pragma warning restore CS8602 // Dereference of a possibly null reference.
             string randomCondiment = Condiments[Randomizer.Next(Condiments.Length)];
+
             string randomBread = Breads[Randomizer.Next(Breads.Length)];
             return randomMeat + " with " + randomCondiment + " on " + randomBread;
         }
