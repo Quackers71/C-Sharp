@@ -19,7 +19,7 @@ namespace ElephantSwap
 
         public void TellMe(string message, Elephant whoSaidIt)
         {
-            MessageBox.Show(whoSaidIt.Name + " says: " + message);
+            MessageBox.Show(whoSaidIt.Name + " says: " + message, this.Name);
         }
 
         public void SpeakTo(Elephant whoToTalkTo, string message)
