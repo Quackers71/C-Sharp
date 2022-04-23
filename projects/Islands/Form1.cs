@@ -35,5 +35,26 @@ namespace Islands
             }
             MessageBox.Show(result);
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string result = "";
+
+            string[] islands = new string[4];
+            islands[0] = "Bermuda";
+            islands[1] = "Fiji";
+            islands[2] = "Azores";
+            islands[3] = "Cozumel";
+
+            int y = 0;
+
+            while (y < 4)
+            {
+                result += "\nisland " + y + " is ";
+                result += islands[y];
+                y += 1;
+            }
+            MessageBox.Show(result);
+        }
     }
 }
