@@ -33,9 +33,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(80, 101);
+            this.button1.Location = new System.Drawing.Point(68, 60);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(137, 46);
+            this.button1.Size = new System.Drawing.Size(85, 57);
             this.button1.TabIndex = 0;
             this.button1.Text = "Show me";
             this.button1.UseVisualStyleBackColor = true;
@@ -43,10 +44,11 @@
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(300, 264);
+            this.ClientSize = new System.Drawing.Size(215, 180);
             this.Controls.Add(this.button1);
+            this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
