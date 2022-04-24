@@ -15,10 +15,12 @@ namespace PoolPuzzle
         int length;
         public static void Main(string[] args)
         {
+
+            int num = 6;
             string results = "";
             int x = 0;
-            Triangle[] ta = new Triangle[4];
-            while (x < 4)
+            Triangle[] ta = new Triangle[num];
+            while (x < num)
             {
                 ta[x] = new Triangle();
                 ta[x].height = (x + 1) * 2;
