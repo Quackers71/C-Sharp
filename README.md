@@ -3,7 +3,8 @@
 - Paperback - 3rd Edition
 - https://github.com/head-first-csharp/third-edition
 - Started reading on 07/03/2022
-- Main Book - currently on Pg.170 ~ 214/948 - Chapter 4 Types and References
+- Main Book - currently on Pg.176 ~ 220/948 - Chapter 4 Types and References
+- Main Book - appendix i: leftovers Pg. 845 ~ 889/948 - The top 11 things we wanted to include in this book 
 - WPF Book  - currently on Pg.85+ ~ 48/165
 
 ## Notes throughout the book / Course
@@ -17,3 +18,4 @@
    When your program creates a new object, it gets added to the heap.
 
  - Chapter 4 - Types and References</br>
+   appendix i: leftovers #4. Use BackgroundWorker to make your WinForms responsive - Pg. 858 ~ 902/948
