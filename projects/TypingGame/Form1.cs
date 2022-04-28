@@ -53,7 +53,7 @@ namespace TypingGame
             correctLabel.Text = "Correct: " + stats.Correct;
             missedLabel.Text = "Missed: " + stats.Missed;
             totalLabel.Text = "Total: " + stats.Total;
-            accuracyLabel = "Accuracy: " + stats.Accuracy;
+            accuracyLabel.Text = "Accuracy: " + stats.Accuracy + "%";
         }
     }
 }

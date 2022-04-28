@@ -32,10 +32,10 @@
             this.listBox1 = new System.Windows.Forms.ListBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel2 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel3 = new System.Windows.Forms.ToolStripStatusLabel();
-            this.toolStripStatusLabel4 = new System.Windows.Forms.ToolStripStatusLabel();
+            this.correctLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.missedLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.totalLabel = new System.Windows.Forms.ToolStripStatusLabel();
+            this.accuracyLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.toolStripStatusLabel5 = new System.Windows.Forms.ToolStripStatusLabel();
             this.difficultyProgressBar = new System.Windows.Forms.ToolStripProgressBar();
             this.statusStrip1.SuspendLayout();
@@ -44,11 +44,11 @@
             // listBox1
             // 
             this.listBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 72F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.listBox1.Font = new System.Drawing.Font("Segoe UI", 64F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.ItemHeight = 254;
+            this.listBox1.ItemHeight = 227;
             this.listBox1.Location = new System.Drawing.Point(0, 0);
-            this.listBox1.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.listBox1.Margin = new System.Windows.Forms.Padding(6);
             this.listBox1.MultiColumn = true;
             this.listBox1.Name = "listBox1";
             this.listBox1.Size = new System.Drawing.Size(1590, 279);
@@ -64,10 +64,10 @@
             // 
             this.statusStrip1.ImageScalingSize = new System.Drawing.Size(32, 32);
             this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripStatusLabel1,
-            this.toolStripStatusLabel2,
-            this.toolStripStatusLabel3,
-            this.toolStripStatusLabel4,
+            this.correctLabel,
+            this.missedLabel,
+            this.totalLabel,
+            this.accuracyLabel,
             this.toolStripStatusLabel5,
             this.difficultyProgressBar});
             this.statusStrip1.Location = new System.Drawing.Point(0, 237);
@@ -78,34 +78,34 @@
             this.statusStrip1.TabIndex = 1;
             this.statusStrip1.Text = "statusStrip1";
             // 
-            // toolStripStatusLabel1
+            // correctLabel
             // 
-            this.toolStripStatusLabel1.Name = "toolStripStatusLabel1";
-            this.toolStripStatusLabel1.Size = new System.Drawing.Size(116, 32);
-            this.toolStripStatusLabel1.Text = "Correct: 0";
+            this.correctLabel.Name = "correctLabel";
+            this.correctLabel.Size = new System.Drawing.Size(116, 32);
+            this.correctLabel.Text = "Correct: 0";
             // 
-            // toolStripStatusLabel2
+            // missedLabel
             // 
-            this.toolStripStatusLabel2.Name = "toolStripStatusLabel2";
-            this.toolStripStatusLabel2.Size = new System.Drawing.Size(114, 32);
-            this.toolStripStatusLabel2.Text = "Missed: 0";
+            this.missedLabel.Name = "missedLabel";
+            this.missedLabel.Size = new System.Drawing.Size(114, 32);
+            this.missedLabel.Text = "Missed: 0";
             // 
-            // toolStripStatusLabel3
+            // totalLabel
             // 
-            this.toolStripStatusLabel3.Name = "toolStripStatusLabel3";
-            this.toolStripStatusLabel3.Size = new System.Drawing.Size(90, 32);
-            this.toolStripStatusLabel3.Text = "Total: 0";
+            this.totalLabel.Name = "totalLabel";
+            this.totalLabel.Size = new System.Drawing.Size(90, 32);
+            this.totalLabel.Text = "Total: 0";
             // 
-            // toolStripStatusLabel4
+            // accuracyLabel
             // 
-            this.toolStripStatusLabel4.Name = "toolStripStatusLabel4";
-            this.toolStripStatusLabel4.Size = new System.Drawing.Size(153, 32);
-            this.toolStripStatusLabel4.Text = "Accuracy: 0%";
+            this.accuracyLabel.Name = "accuracyLabel";
+            this.accuracyLabel.Size = new System.Drawing.Size(153, 32);
+            this.accuracyLabel.Text = "Accuracy: 0%";
             // 
             // toolStripStatusLabel5
             // 
             this.toolStripStatusLabel5.Name = "toolStripStatusLabel5";
-            this.toolStripStatusLabel5.Size = new System.Drawing.Size(837, 32);
+            this.toolStripStatusLabel5.Size = new System.Drawing.Size(899, 32);
             this.toolStripStatusLabel5.Spring = true;
             this.toolStripStatusLabel5.Text = "Difficulty";
             this.toolStripStatusLabel5.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -125,7 +125,7 @@
             this.Controls.Add(this.listBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.KeyPreview = true;
-            this.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.Margin = new System.Windows.Forms.Padding(6);
             this.MaximizeBox = false;
             this.MdiChildrenMinimizedAnchorBottom = false;
             this.MinimizeBox = false;
@@ -145,10 +145,10 @@
         private ListBox listBox1;
         private System.Windows.Forms.Timer timer1;
         private StatusStrip statusStrip1;
-        private ToolStripStatusLabel toolStripStatusLabel1;
-        private ToolStripStatusLabel toolStripStatusLabel2;
-        private ToolStripStatusLabel toolStripStatusLabel3;
-        private ToolStripStatusLabel toolStripStatusLabel4;
+        private ToolStripStatusLabel correctLabel;
+        private ToolStripStatusLabel missedLabel;
+        private ToolStripStatusLabel totalLabel;
+        private ToolStripStatusLabel accuracyLabel;
         private ToolStripStatusLabel toolStripStatusLabel5;
         private ToolStripProgressBar difficultyProgressBar;
     }
