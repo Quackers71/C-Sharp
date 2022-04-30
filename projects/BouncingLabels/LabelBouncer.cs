@@ -10,7 +10,7 @@ namespace BouncingLabels
     using System.Windows.Forms;
     class LabelBouncer
     {
-        public Label MyLabel;
+        public Label? MyLabel;
 
         public bool GoingForward = true;
 
@@ -18,7 +18,7 @@ namespace BouncingLabels
         {
             if (MyLabel != null)
             {
-                if (!GoingForward == true)
+                if (GoingForward == true)
                 {
                     MyLabel.Left += 5;
                     if (MyLabel.Left >= MyLabel.Parent.Width - MyLabel.Width)

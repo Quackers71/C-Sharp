@@ -1,3 +1,13 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
 namespace BouncingLabels
 {
     public partial class Form1 : Form
@@ -18,7 +28,9 @@ namespace BouncingLabels
             }
             else
             {
+#pragma warning disable CS8625 // Cannot convert null literal to non-nullable reference type.
                 bouncers[index] = null;
+#pragma warning restore CS8625 // Cannot convert null literal to non-nullable reference type.
             }
         }
 

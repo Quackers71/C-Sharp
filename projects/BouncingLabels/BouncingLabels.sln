@@ -3,7 +3,12 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.1.32319.34
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BouncingLabels", "BouncingLabels.csproj", "{8825E52A-C310-4339-9936-F37C4FF3DC54}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BouncingLabels", "BouncingLabels.csproj", "{8825E52A-C310-4339-9936-F37C4FF3DC54}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BE6B40A4-3D8F-40F8-9A5B-ED5FBE40CB98}"
+	ProjectSection(SolutionItems) = preProject
+		.editorconfig = .editorconfig
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
