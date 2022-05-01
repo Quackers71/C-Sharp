@@ -8,6 +8,18 @@ namespace RaceTrackSimulator
 {
     public class Bet
     {
+        public int Amount;
+        public int Dog;
+        public Guy Bettor;
 
+        public string GetDescription()
+        {
+            return "Yo";
+        }
+
+        public int PayOut(int Winner)
+        {
+            return 0;
+        }
     }
 }

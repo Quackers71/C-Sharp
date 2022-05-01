@@ -9,6 +9,31 @@ namespace RaceTrackSimulator
 {
     public class Guy
     {
+        public string Name;
+        public string MyBet;
+        public int Cash;
 
+        public RadioButton MyRadioButton;
+        public Label MyLabel;
+
+        public void UpdateLabels()
+        {
+
+        }
+
+        public void ClearBet()
+        {
+
+        }
+
+        public bool PlaceBet()
+        {
+            return true;
+        }
+
+        public void Collect(int Winner)
+        {
+
+        }
     }
 }
