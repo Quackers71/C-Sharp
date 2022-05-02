@@ -56,8 +56,32 @@ namespace RaceTrackSimulator
 
             // Initialising Guys
 
-            // TBC
+            GuyArray[0] = new Guy()
+            {
+                Name = "Joe",
+                MyBet = null,
+                Cash = 50,
+                MyRadioButton = joeRadioButton,
+                MyLabel = joeBetLabel
+            };
 
+            GuyArray[1] = new Guy()
+            {
+                Name = "Bob",
+                MyBet = null,
+                Cash = 75,
+                MyRadioButton = bobRadioButton,
+                MyLabel = bobBetLabel
+            };
+
+            GuyArray[2] = new Guy()
+            {
+                Name = "Al",
+                MyBet = null,
+                Cash = 45,
+                MyRadioButton = alRadioButton,
+                MyLabel = alBetLabel
+            };
 
         }
 
