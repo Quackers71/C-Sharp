@@ -27,11 +27,12 @@ namespace RaceTrackSimulator
 
         public void ClearBet()
         {
-
+            MyBet = null;
         }
 
-        public bool PlaceBet()
+        public bool PlaceBet(int BetAmount, int DogToWin)
         {
+
             return true;
         }
 

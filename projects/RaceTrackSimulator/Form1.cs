@@ -14,6 +14,7 @@ namespace RaceTrackSimulator
     {
         public Greyhound[] GreyhoundArray = new Greyhound[4];
         public Guy[] GuyArray = new Guy[3];
+
         public Random MyRandomizer;
 
         public Form1()
@@ -24,7 +25,7 @@ namespace RaceTrackSimulator
 
             GreyhoundArray[0] = new Greyhound()
             {
-                racetrackPictureBox = dog1,
+                MyPictureBox = dog1,
                 StartingPosition = dog1.Left,
                 RacetrackLength = racetrackPictureBox.Width - dog1.Width,
                 Randomizer = MyRandomizer
@@ -32,7 +33,7 @@ namespace RaceTrackSimulator
 
             GreyhoundArray[1] = new Greyhound()
             {
-                racetrackPictureBox = dog2,
+                MyPictureBox = dog2,
                 StartingPosition = dog2.Left,
                 RacetrackLength = racetrackPictureBox.Width - dog2.Width,
                 Randomizer = MyRandomizer
@@ -40,7 +41,7 @@ namespace RaceTrackSimulator
 
             GreyhoundArray[2] = new Greyhound()
             {
-                racetrackPictureBox = dog3,
+                MyPictureBox = dog3,
                 StartingPosition = dog3.Left,
                 RacetrackLength = racetrackPictureBox.Width - dog3.Width,
                 Randomizer = MyRandomizer
@@ -48,7 +49,7 @@ namespace RaceTrackSimulator
 
             GreyhoundArray[3] = new Greyhound()
             {
-                racetrackPictureBox = dog4,
+                MyPictureBox = dog4,
                 StartingPosition = dog4.Left,
                 RacetrackLength = racetrackPictureBox.Width - dog4.Width,
                 Randomizer = MyRandomizer
@@ -101,6 +102,16 @@ namespace RaceTrackSimulator
         }
 
         private void alRadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void raceButton_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
         {
 
         }

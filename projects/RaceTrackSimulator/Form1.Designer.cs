@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.racetrackPictureBox = new System.Windows.Forms.PictureBox();
             this.dog1 = new System.Windows.Forms.PictureBox();
@@ -50,6 +51,7 @@
             this.joeRadioButton = new System.Windows.Forms.RadioButton();
             this.minimumBetLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.racetrackPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dog2)).BeginInit();
@@ -140,6 +142,7 @@
             this.raceButton.TabIndex = 15;
             this.raceButton.Text = "Race!";
             this.raceButton.UseVisualStyleBackColor = true;
+            this.raceButton.Click += new System.EventHandler(this.raceButton_Click);
             // 
             // betsButton
             // 
@@ -303,6 +306,11 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Betting Parlour";
             // 
+            // timer1
+            // 
+            this.timer1.Interval = 1;
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
@@ -354,5 +362,6 @@
         private NumericUpDown numericUpDown1;
         private Button betsButton;
         private Button raceButton;
+        private System.Windows.Forms.Timer timer1;
     }
 }
