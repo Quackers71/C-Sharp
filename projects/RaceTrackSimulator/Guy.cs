@@ -10,7 +10,7 @@ namespace RaceTrackSimulator
     public class Guy
     {
         public string Name;
-        public string MyBet;
+        public Bet MyBet;
         public int Cash;
 
         public RadioButton MyRadioButton;
@@ -18,7 +18,11 @@ namespace RaceTrackSimulator
 
         public void UpdateLabels()
         {
-
+            MyRadioButton.Text = Name + " has " + Cash + " bucks";
+            if (MyBet == null)
+            {
+                MyLabel.Text = Name + " hasn't placed a bet.";
+            }
         }
 
         public void ClearBet()

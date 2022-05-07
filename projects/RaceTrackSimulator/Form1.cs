@@ -83,6 +83,11 @@ namespace RaceTrackSimulator
                 MyLabel = alBetLabel
             };
 
+            for (int i = 0; i < 3; i++)
+            {
+                GuyArray[i].UpdateLabels();
+            }
+
         }
 
         private void joeRadioButton_CheckedChanged(object sender, EventArgs e)
