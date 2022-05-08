@@ -152,6 +152,7 @@
             this.betsButton.TabIndex = 14;
             this.betsButton.Text = "Bets";
             this.betsButton.UseVisualStyleBackColor = true;
+            this.betsButton.Click += new System.EventHandler(this.betsButton_Click);
             // 
             // alBetLabel
             // 

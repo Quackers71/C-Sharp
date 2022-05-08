@@ -93,25 +93,48 @@ namespace RaceTrackSimulator
 
         private void joeRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            // joeBetLabel.Text = GuyArray[0].Name;
         }
 
         private void bobRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            // bobBetLabel.Text = GuyArray[1].Name;
         }
 
         private void alRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            // alBetLabel.Text = GuyArray[2].Name;
         }
 
         private void raceButton_Click(object sender, EventArgs e)
         {
-
+            timer1.Enabled = true;
+            bettingPanel.Enabled = false;
         }
 
         private void timer1_Tick(object sender, EventArgs e)
+        {
+            for (int i = 0; i < 4; i++)
+            {
+                if (GreyhoundArray[i].Run())
+                {
+                    timer1.Stop();
+                    MessageBox.Show("The Winner is GreyHound #" + ++i + ".");
+                    for (int x = 0; x < 4; x++)
+                    {
+                        GreyhoundArray[x].TakeStartingPosition();
+                    }
+                    for (int y = 0; y < 3; y++)
+                    {
+                        GuyArray[y].Collect(i);
+                        bettingPanel.Enabled = true;
+                        GuyArray[y].UpdateLabels();
+                    }
+                }
+            }
+        }
+
+        private void betsButton_Click(object sender, EventArgs e)
         {
 
         }
