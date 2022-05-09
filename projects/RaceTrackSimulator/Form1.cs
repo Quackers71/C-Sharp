@@ -93,17 +93,17 @@ namespace RaceTrackSimulator
 
         private void joeRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            // joeBetLabel.Text = GuyArray[0].Name;
+            currentSelection.Text = GuyArray[0].Name;
         }
 
         private void bobRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            // bobBetLabel.Text = GuyArray[1].Name;
+            currentSelection.Text = GuyArray[1].Name;
         }
 
         private void alRadioButton_CheckedChanged(object sender, EventArgs e)
         {
-            // alBetLabel.Text = GuyArray[2].Name;
+            currentSelection.Text = GuyArray[2].Name;
         }
 
         private void raceButton_Click(object sender, EventArgs e)
@@ -136,7 +136,42 @@ namespace RaceTrackSimulator
 
         private void betsButton_Click(object sender, EventArgs e)
         {
+            int BetAmount = (int)betAmount_Numeric.Value;
+            int DogNumber = (int)dogNumber_Numeric.Value;
 
+            if (joeRadioButton.Checked)
+            {
+                if (GuyArray[0].PlaceBet(BetAmount, DogNumber))
+                {
+                    joeBetLabel.Text = GuyArray[0].MyBet.GetDescription();
+                }
+                else
+                {
+                    MessageBox.Show(GuyArray[0].Name + " doesn't have enough money!");
+                }
+            }
+            else if (bobRadioButton.Checked)
+            {
+                if (GuyArray[1].PlaceBet(BetAmount, DogNumber))
+                {
+                    bobBetLabel.Text = GuyArray[1].MyBet.GetDescription();
+                }
+                else
+                {
+                    MessageBox.Show(GuyArray[1].Name + " doesn't have enough money!");
+                }
+            }
+            else if (alRadioButton.Checked)
+            {
+                if (GuyArray[2].PlaceBet(BetAmount, DogNumber))
+                {
+                    alBetLabel.Text = GuyArray[2].MyBet.GetDescription();
+                }
+                else
+                {
+                    MessageBox.Show(GuyArray[2].Name + " doesn't have enough money!");
+                }
+            }
         }
     }
 }

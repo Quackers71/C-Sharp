@@ -17,17 +17,23 @@ namespace RaceTrackSimulator
 
         public bool Run()
         {
-            // Move forward either 1, 2, 3 or 4 spaces at random
-            // Update the position of my PictureBox on the form like this:
-            // MyPictureBox.Left = StartingPosition + Location;
-            
-            // Return true if I won the race
-            return true;
+            Location += Randomizer.Next(1, 4);
+            MyPictureBox.Left = StartingPosition + Location;
+
+            if (MyPictureBox.Left >= RacetrackLength)
+            {
+                return true;
+            }
+            else
+            {
+                return false;
+            }
         }
 
         public void TakeStartingPosition()
         {
-            // Reset my location to 0 and my PictureBox to starting position
+            Location = 0;
+            MyPictureBox.Left = 15;
         }
     }
 }

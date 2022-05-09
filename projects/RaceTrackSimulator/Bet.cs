@@ -14,12 +14,19 @@ namespace RaceTrackSimulator
 
         public string GetDescription()
         {
-            return "Yo";
+            return Bettor.Name + " Bets " + Amount + " on Dog #" + Dog;
         }
 
         public int PayOut(int Winner)
         {
-            return 0;
+            if (Dog == Winner)
+            {
+                return Amount;
+            }
+            else
+            {
+                return -Amount;
+            }
         }
     }
 }

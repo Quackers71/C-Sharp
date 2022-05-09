@@ -32,13 +32,26 @@ namespace RaceTrackSimulator
 
         public bool PlaceBet(int BetAmount, int DogToWin)
         {
-
-            return true;
+            if (BetAmount <= Cash)
+            {
+                MyBet = new Bet()
+                {
+                    Amount = BetAmount,
+                    Dog = DogToWin,
+                    Bettor = this
+                };
+                return true;
+            }
+            return false;
         }
 
         public void Collect(int Winner)
         {
-
+            if (MyBet != null)
+            {
+                Cash += MyBet.PayOut(Winner);
+            }
+            ClearBet();
         }
     }
 }
