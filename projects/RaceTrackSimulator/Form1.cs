@@ -136,8 +136,8 @@ namespace RaceTrackSimulator
 
         private void betsButton_Click(object sender, EventArgs e)
         {
-            int BetAmount = (int)betAmount_Numeric.Value;
-            int DogNumber = (int)dogNumber_Numeric.Value;
+            int BetAmount = (int)numericUpDown1.Value;
+            int DogNumber = (int)numericUpDown2.Value;
 
             if (joeRadioButton.Checked)
             {
