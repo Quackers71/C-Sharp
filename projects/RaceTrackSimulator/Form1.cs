@@ -15,7 +15,7 @@ namespace RaceTrackSimulator
         public Greyhound[] GreyhoundArray = new Greyhound[4];
         public Guy[] GuyArray = new Guy[3];
 
-        public Random MyRandomizer;
+        Random MyRandomizer = new Random();
 
         public Form1()
         {
