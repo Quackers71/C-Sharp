@@ -159,27 +159,27 @@
             this.alBetLabel.AutoSize = true;
             this.alBetLabel.Location = new System.Drawing.Point(219, 91);
             this.alBetLabel.Name = "alBetLabel";
-            this.alBetLabel.Size = new System.Drawing.Size(119, 15);
+            this.alBetLabel.Size = new System.Drawing.Size(61, 15);
             this.alBetLabel.TabIndex = 13;
-            this.alBetLabel.Text = "# hasn\'t placed a bet!";
+            this.alBetLabel.Text = "alBetLabel";
             // 
             // bobBetLabel
             // 
             this.bobBetLabel.AutoSize = true;
             this.bobBetLabel.Location = new System.Drawing.Point(219, 66);
             this.bobBetLabel.Name = "bobBetLabel";
-            this.bobBetLabel.Size = new System.Drawing.Size(119, 15);
+            this.bobBetLabel.Size = new System.Drawing.Size(73, 15);
             this.bobBetLabel.TabIndex = 12;
-            this.bobBetLabel.Text = "# hasn\'t placed a bet!";
+            this.bobBetLabel.Text = "bobBetLabel";
             // 
             // joeBetLabel
             // 
             this.joeBetLabel.AutoSize = true;
             this.joeBetLabel.Location = new System.Drawing.Point(219, 41);
             this.joeBetLabel.Name = "joeBetLabel";
-            this.joeBetLabel.Size = new System.Drawing.Size(119, 15);
+            this.joeBetLabel.Size = new System.Drawing.Size(68, 15);
             this.joeBetLabel.TabIndex = 11;
-            this.joeBetLabel.Text = "# hasn\'t placed a bet!";
+            this.joeBetLabel.Text = "joeBetLabel";
             // 
             // numericUpDown2
             // 
@@ -258,9 +258,9 @@
             this.alRadioButton.AutoSize = true;
             this.alRadioButton.Location = new System.Drawing.Point(26, 87);
             this.alRadioButton.Name = "alRadioButton";
-            this.alRadioButton.Size = new System.Drawing.Size(108, 19);
+            this.alRadioButton.Size = new System.Drawing.Size(100, 19);
             this.alRadioButton.TabIndex = 4;
-            this.alRadioButton.Text = "Al has ## bucks";
+            this.alRadioButton.Text = "alRadioButton";
             this.alRadioButton.UseVisualStyleBackColor = true;
             this.alRadioButton.CheckedChanged += new System.EventHandler(this.alRadioButton_CheckedChanged);
             // 
@@ -269,9 +269,9 @@
             this.bobRadioButton.AutoSize = true;
             this.bobRadioButton.Location = new System.Drawing.Point(26, 62);
             this.bobRadioButton.Name = "bobRadioButton";
-            this.bobRadioButton.Size = new System.Drawing.Size(118, 19);
+            this.bobRadioButton.Size = new System.Drawing.Size(112, 19);
             this.bobRadioButton.TabIndex = 3;
-            this.bobRadioButton.Text = "Bob has ## bucks";
+            this.bobRadioButton.Text = "bobRadioButton";
             this.bobRadioButton.UseVisualStyleBackColor = true;
             this.bobRadioButton.CheckedChanged += new System.EventHandler(this.bobRadioButton_CheckedChanged);
             // 
@@ -281,10 +281,10 @@
             this.joeRadioButton.Checked = true;
             this.joeRadioButton.Location = new System.Drawing.Point(26, 37);
             this.joeRadioButton.Name = "joeRadioButton";
-            this.joeRadioButton.Size = new System.Drawing.Size(117, 19);
+            this.joeRadioButton.Size = new System.Drawing.Size(107, 19);
             this.joeRadioButton.TabIndex = 2;
             this.joeRadioButton.TabStop = true;
-            this.joeRadioButton.Text = "Joe has  ## bucks";
+            this.joeRadioButton.Text = "joeRadioButton";
             this.joeRadioButton.UseVisualStyleBackColor = true;
             this.joeRadioButton.CheckedChanged += new System.EventHandler(this.joeRadioButton_CheckedChanged);
             // 

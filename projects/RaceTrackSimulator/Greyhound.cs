@@ -13,7 +13,7 @@ namespace RaceTrackSimulator
         public int RacetrackLength;
         public PictureBox MyPictureBox = null;
         public int Location = 0;
-        public Random? Randomizer;
+        public Random Randomizer;
 
         public bool Run()
         {
