@@ -3,9 +3,11 @@
 - Paperback - 3rd Edition
 - https://github.com/head-first-csharp/third-edition
 - Started reading on 07/03/2022
-- Main Book - currently on Pg.188 ~ 232/948 - Chapter 4 Types and References
+- Main Book - currently on Pg.197 ~ 241/948 - Chapter 5 - Encapsulation
 - Main Book - appendix i: leftovers Pg. 845 ~ 889/948 - The top 11 things we wanted to include in this book 
 - WPF Book  - currently on Pg.85+ ~ 48/165
+
+- A quick C# Console App - 'NumberGuesser' from Traversy Media via https://www.youtube.com/watch?v=GcFJjpMFJvI
 
 ## Notes throughout the book / Course
 
@@ -19,3 +21,6 @@
 
  - Chapter 4 - Types and References</br>
    appendix i: leftovers #4. Use BackgroundWorker to make your WinForms responsive - Pg. 858 ~ 902/948
+   Racetrack Simulator - help required from https://github.com/claveeq/Racetrack-Simulator
+
+ - Chapter 5 - Encapsulation
