@@ -40,27 +40,22 @@ namespace NumberGuesser
 
                 PrintColorMessage(ConsoleColor.Yellow, "Well done, you guessed the correct number...");
 
-                bool confirmed = false;
+                ConsoleKey response;
                 do
                 {
-                    ConsoleKey response;
-                    do
-                    {
-                        Console.WriteLine("\nPlay Again? [Y or N] : ");
-                        response = Console.ReadKey(false).Key;
+                    Console.WriteLine("\nPlay Again? [Y or N] ");
+                    response = Console.ReadKey(false).Key;
 
-                        if (response == ConsoleKey.Y)
-                        {
-                            continue;
-                        }
-                        else if (response == ConsoleKey.N)
-                        {
-                            return;
-                        }
+                    if (response == ConsoleKey.Y)
+                    {
+                        continue;
                     }
-                    while (response != ConsoleKey.Y && response != ConsoleKey.N);
-                    confirmed = response == ConsoleKey.Y;
-                } while (!confirmed);
+                    else if (response == ConsoleKey.N)
+                    {
+                        return;
+                    }
+                 }
+                 while (response != ConsoleKey.Y && response != ConsoleKey.N);
             }
 
             /*Console.WriteLine("Press any Key to Exit");
