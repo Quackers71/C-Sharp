@@ -33,7 +33,7 @@
             this.fancyBox = new System.Windows.Forms.CheckBox();
             this.healthyBox = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.costLabel = new System.Windows.Forms.TextBox();
+            this.costLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -104,7 +104,8 @@
             // 
             // costLabel
             // 
-            this.costLabel.Location = new System.Drawing.Point(82, 152);
+            this.costLabel.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.costLabel.Location = new System.Drawing.Point(82, 154);
             this.costLabel.Name = "costLabel";
             this.costLabel.Size = new System.Drawing.Size(79, 23);
             this.costLabel.TabIndex = 5;
@@ -123,7 +124,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Party Planner";
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -137,6 +138,6 @@
         private CheckBox fancyBox;
         private CheckBox healthyBox;
         private Label label2;
-        private TextBox costLabel;
+        private Label costLabel;
     }
 }
