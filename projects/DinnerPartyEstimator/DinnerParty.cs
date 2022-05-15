@@ -8,45 +8,57 @@ namespace DinnerPartyEstimator
 {    
     internal class DinnerParty
     {
-        public int NumberOfPeople;
-        public decimal CostOfBeveragesPerPerson;
-        public decimal CostOfDecorations = 0;
         public const int CostOfFoodPerPerson = 25;
+        public int NumberOfPeople { get; set; }
+        public bool FancyDecorations { get; set; }
+        public bool HealthyOption { get; set; }
 
-        public void CalculateCostOfDecorations(bool fancy)
+        public DinnerParty(int numberOfPeople, bool healthyOption, bool fancyDecorations)
         {
-            if (fancy)
-            {
-                CostOfDecorations = (NumberOfPeople * 15.00M) + 50M;
-            }
-            else
-            {
-                CostOfDecorations = (NumberOfPeople * 7.50M) + 30M;
-            }
+            NumberOfPeople = numberOfPeople;
+            FancyDecorations = fancyDecorations;
+            HealthyOption = healthyOption;
         }
 
-        public void SetHealthyOption(bool healthyOption)
+        private decimal CalculateCostOfDecorations()
         {
-            if (healthyOption)
+            decimal costOfDecorations;
+            if (FancyDecorations)
             {
-                CostOfBeveragesPerPerson = 5.00M;
+                costOfDecorations = (NumberOfPeople * 15.00M) + 50M;
             }
             else
             {
-                CostOfBeveragesPerPerson = 20.00M;
+                costOfDecorations = (NumberOfPeople * 7.50M) + 30M;
             }
+            return costOfDecorations;
         }
 
-        public decimal CalculateCost(bool healthyOption)
+        private decimal CalculateCostOfBeveragesPerPerson()
         {
-            decimal totalCost = CostOfDecorations + ((CostOfBeveragesPerPerson + CostOfFoodPerPerson) * NumberOfPeople);
-
-            if (healthyOption)
+            decimal costOfBeveragesPerPerson;
+            if (HealthyOption)
             {
-                return totalCost * .95M;
+                costOfBeveragesPerPerson = 5.00M;
             }
             else
             {
+                costOfBeveragesPerPerson = 20.00M;
+            }
+            return costOfBeveragesPerPerson;
+        }
+
+        public decimal Cost
+        {
+            get
+            {
+                decimal totalCost = CalculateCostOfDecorations();
+                totalCost += ((CalculateCostOfBeveragesPerPerson() + CostOfFoodPerPerson) * NumberOfPeople);
+
+                if (HealthyOption)
+                {
+                    totalCost *= .95M;
+                }
                 return totalCost;
             }
         }
