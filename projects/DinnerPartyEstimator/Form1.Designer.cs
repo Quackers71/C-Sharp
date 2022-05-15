@@ -67,6 +67,7 @@
             0,
             0,
             0});
+            this.numericUpDown1.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // fancyBox
             // 
@@ -79,18 +80,18 @@
             this.fancyBox.TabIndex = 2;
             this.fancyBox.Text = "Fancy Decorations";
             this.fancyBox.UseVisualStyleBackColor = true;
+            this.fancyBox.CheckedChanged += new System.EventHandler(this.fancyBox_CheckedChanged);
             // 
             // healthyBox
             // 
             this.healthyBox.AutoSize = true;
-            this.healthyBox.Checked = true;
-            this.healthyBox.CheckState = System.Windows.Forms.CheckState.Checked;
             this.healthyBox.Location = new System.Drawing.Point(45, 124);
             this.healthyBox.Name = "healthyBox";
-            this.healthyBox.Size = new System.Drawing.Size(133, 19);
+            this.healthyBox.Size = new System.Drawing.Size(107, 19);
             this.healthyBox.TabIndex = 3;
-            this.healthyBox.Text = "Healthy Decorations";
+            this.healthyBox.Text = "Healthy Option";
             this.healthyBox.UseVisualStyleBackColor = true;
+            this.healthyBox.CheckedChanged += new System.EventHandler(this.healthyBox_CheckedChanged);
             // 
             // label2
             // 
