@@ -3,7 +3,7 @@
 - Paperback - 3rd Edition
 - https://github.com/head-first-csharp/third-edition
 - Started reading on 07/03/2022
-- Main Book - currently on Pg.202 ~ 246/948 - Chapter 5 - Encapsulation
+- Main Book - currently on Pg.212 ~ 256/948 - Chapter 5 - Encapsulation
 - Main Book - appendix i: leftovers Pg. 845 ~ 889/948 - The top 11 things we wanted to include in this book 
 - WPF Book  - currently on Pg.85+ ~ 48/165
 
