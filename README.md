@@ -8,6 +8,8 @@
 - WPF Book  - currently on Pg.85+ ~ 48/165
 
 - A quick C# Console App - 'NumberGuesser' from Traversy Media via https://www.youtube.com/watch?v=GcFJjpMFJvI
+- Build a To-Do app using C# and Blazor from James Hall-Treworgy via https://youtu.be/-fAVNxsDyH0
+  dotnet watch run (this will keep the live session running)
 
 ## Notes throughout the book / Course
 
