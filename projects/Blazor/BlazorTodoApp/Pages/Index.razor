@@ -1,9 +1,38 @@
 ﻿@page "/"
 
-<PageTitle>Index</PageTitle>
+<div class="todo-container">
+	<h1>ToDo App!</h1>
+	<div class="todo-input">
+		<input type="text" @bind="todoInput"/>
+		<button @onclick="AddTodo">Add</button>
+	</div>
 
-<h1>Hello, world!</h1>
+	@for (int i = 0; i < todos.Count; i++)
+	{
+		var index = i;
+		var todo = todos[i];
+		<div class="todo-item">
+			 <div class="todo-item__text">@todo</div>
+			 <div class="todo-item__close" @onclick="@(() => RemoveTodo(index))">&times;</div>
+		</div>
+	}
 
-Welcome to your new app.
+</div>
 
-<SurveyPrompt Title="How is Blazor working for you?" />
+@code 
+{
+	public string todoInput { get; set; }
+	public List<string> todos = new List<string>();
+
+	public void AddTodo()
+	{
+		todos.Add(todoInput);
+		todoInput = "";
+	}
+
+	public void RemoveTodo(int index)
+	{
+		todos.RemoveAt(index);
+	}
+}
+
