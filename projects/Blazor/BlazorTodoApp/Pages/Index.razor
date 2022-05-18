@@ -1,4 +1,5 @@
 ﻿@page "/"
+@using BlazorTodoApp.Models
 
 <div class="todo-container">
 	<h1>ToDo App!</h1>
@@ -12,7 +13,11 @@
 		var index = i;
 		var todo = todos[i];
 		<div class="todo-item">
-			 <div class="todo-item__text">@todo</div>
+			 <div 
+				 class="@(todo.IsComplete ? "todo-item__text complete" : "todo-item__text")" 
+				 @onclick="@(() => MarkAsComplete(todo))">
+				 @todo.Title
+			 </div>
 			 <div class="todo-item__close" @onclick="@(() => RemoveTodo(index))">&times;</div>
 		</div>
 	}
@@ -22,17 +27,24 @@
 @code 
 {
 	public string todoInput { get; set; }
-	public List<string> todos = new List<string>();
+	public List<Todo> todos = new List<Todo>();
 
 	public void AddTodo()
 	{
-		todos.Add(todoInput);
+		var todo = new Todo();
+		todo.Title = todoInput;
+		todos.Add(todo);
 		todoInput = "";
 	}
 
 	public void RemoveTodo(int index)
 	{
 		todos.RemoveAt(index);
+	}
+
+	public void MarkAsComplete(Todo todo)
+	{
+		todo.IsComplete = !todo.IsComplete;
 	}
 }
 
